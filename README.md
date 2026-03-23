@@ -1,7 +1,3 @@
-## Study Notes (Portuguese)
-
-Detailed study notes can be found in the notes folder.
-
 # Cybersecurity Study Journey
 
 This repository documents my learning journey in Cybersecurity.
@@ -9,6 +5,12 @@ This repository documents my learning journey in Cybersecurity.
 The goal of this project is to study networking, security fundamentals and cybersecurity tools while documenting everything I learn through practical notes and experiments.
 
 Start date: March 2026
+
+---
+
+## Study Notes (Portuguese)
+
+Detailed study notes written in Portuguese can be found in the **notes** folder.
 
 ---
 
