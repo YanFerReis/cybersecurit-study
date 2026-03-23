@@ -1,3 +1,7 @@
+## Study Notes (Portuguese)
+
+Detailed study notes can be found in the notes folder.
+
 # Cybersecurity Study Journey
 
 This repository documents my learning journey in Cybersecurity.
