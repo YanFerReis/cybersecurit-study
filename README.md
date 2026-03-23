@@ -212,3 +212,164 @@ Future topics will include:
 - Security tools
 - Packet analysis
 - Vulnerability discovery
+
+
+
+## Day 2 — Network Ports
+
+## Network Ports
+
+Ports are numerical identifiers used to distinguish different types of communication within a device connected to a network.
+
+They allow a single computer or server to run multiple services at the same time without mixing the incoming data.
+
+Each port acts as a specific communication channel. When data arrives at a device through the network, the operating system checks the port number and forwards the data to the correct application or service.
+
+For example, a server may simultaneously receive:
+
+- Web page requests
+- File transfers
+- Email messages
+
+Each of these services uses a different port, ensuring that data is processed correctly.
+
+---
+
+## How Ports Work
+
+When a device communicates over the internet, two key elements are used:
+
+IP Address → Identifies the device on the network  
+Port → Identifies which service within the device should receive the data
+
+In practice:
+
+IP + Port = Specific Service
+
+Example:
+
+192.168.1.1:80
+
+192.168.1.1 → Server address  
+80 → Port used for the HTTP web service
+
+---
+
+## Port Range
+
+Network ports range from:
+
+0 to 65535
+
+They are divided into three main categories.
+
+### 1. Well-Known Ports (0–1023)
+
+Reserved for standard internet services.
+
+Examples:
+
+| Port | Service |
+|-----|------|
+| 20/21 | FTP (File Transfer Protocol) |
+| 22 | SSH (Secure Shell) |
+| 23 | Telnet |
+| 25 | SMTP (Email sending) |
+| 53 | DNS |
+| 80 | HTTP |
+| 443 | HTTPS |
+
+---
+
+### 2. Registered Ports (1024–49151)
+
+Used by specific applications and registered services.
+
+Examples:
+
+| Port | Service |
+|-----|------|
+| 3306 | MySQL |
+| 5432 | PostgreSQL |
+| 8080 | Alternative HTTP |
+
+---
+
+### 3. Dynamic / Ephemeral Ports (49152–65535)
+
+Temporary ports used by the operating system for outbound connections.
+
+Example:
+
+When your browser accesses a website, it uses a random port from this range.
+
+Example communication flow:
+
+PC:52014 → Server:443
+
+The server responds to the same port, ensuring the data reaches the correct application.
+
+---
+
+## Example of a Web Connection
+
+When accessing a website:
+
+Client computer → random ephemeral port  
+Web server → port 80 (HTTP) or 443 (HTTPS)
+
+Example:
+
+PC:52014 → Server:443
+
+This allows the server to send the response back to the correct client process.
+
+---
+
+## Importance of Ports in Network Security
+
+Ports play a critical role in network security.
+
+Security tools analyze which ports are open, closed, or filtered on a system.
+
+Possible states include:
+
+Open → a service is running on the port  
+Closed → no service is listening  
+Filtered → blocked by a firewall
+
+Attackers often scan systems looking for open ports with vulnerable services.
+
+Port scanning tools help identify these exposures.
+
+---
+
+## Tools Used to Analyze Ports
+
+Common tools used in networking and security include:
+
+- netstat
+- ss
+- nmap
+- lsof
+
+Example command:
+nmap 192.168.1.1
+
+
+This command scans a device to identify which ports are open.
+
+---
+
+## Summary
+
+Ports identify services running inside a device.
+
+They work together with IP addresses to route network communication.
+
+Key points:
+
+- Ports range from 0 to 65535
+- They allow multiple services to run simultaneously
+- They are essential for networking and cybersecurity
+- Open ports can represent potential attack surfaces
