@@ -373,3 +373,57 @@ Key points:
 - They allow multiple services to run simultaneously
 - They are essential for networking and cybersecurity
 - Open ports can represent potential attack surfaces
+
+
+## Day 3 — Port Scanning
+
+Today I studied the concept of **port scanning** and how it is used to identify open ports and active services on a system.
+
+### What is Port Scanning
+
+Port scanning is a technique used to discover which ports are open on a device connected to a network.
+
+When a port is open, it usually means that a service is running and listening for incoming connections.
+
+Identifying open ports helps security professionals understand which services are exposed on a system.
+
+---
+
+### Tool Used
+
+For this exercise I used **Nmap**, a widely used network scanning tool.
+
+Nmap allows security analysts and network administrators to scan systems and detect:
+
+- open ports
+- closed ports
+- filtered ports
+
+It can also help identify the services running on those ports.
+
+---
+
+### Example Command
+nmap localhost
+
+This command scans the local machine and checks which ports are open.
+
+---
+
+### Example of Common Ports
+
+| Port | Service |
+|-----|------|
+| 22 | SSH |
+| 53 | DNS |
+| 80 | HTTP |
+| 443 | HTTPS |
+
+---
+
+### Key Takeaways
+
+- Port scanning is used to discover open ports on a system.
+- Open ports usually indicate running services.
+- Tools like Nmap help identify exposed services on a network.
+- Port scanning is commonly used in cybersecurity, network administration, and penetration testing.
